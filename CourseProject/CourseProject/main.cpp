@@ -14,7 +14,7 @@
 int main(int argc, char** argv)
 {
 	if (argc != 2) {
-		std::cout << "Homework 2 Solution.\n";
+		std::cout << "Error in command arguments";
 		std::cout << "Usage: " << argv[0] << " input_mesh.obj\n";
 		return -1;
 	}
@@ -32,10 +32,7 @@ int main(int argc, char** argv)
 	ComputeAllFaceNormals();
 	ComputeAllCornerAngles();
 	ComputeAllVertNormals();
-	//ComputeBoundaries();
-	//ComputeCurvature();
-	//ColorEncodeKG();
-
+	
 	//OpenGL Routines
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
